@@ -1,4 +1,4 @@
-# AWS RDS Free Tier Infrastructure
+# Terraform RDS (Free Tier) Module
 
 A Terraform module that deploys a MySQL RDS database instance in AWS.
 
