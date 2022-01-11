@@ -2,7 +2,7 @@
 
 A Terraform module that deploys a MySQL RDS database instance in AWS.
 
-By default, the security group created will restrict access to the database to the ip address provided during the `$ terraform plan` step.
+By default, the security group created has open access (`0.0.0.0/0`). Tightening database access (e.g. restricting access to a specific ip address) can be done in the AWS Console once the terraform config has been deployed.
 
 ## Prerequisites
 

@@ -17,10 +17,10 @@ variable "name" {
   default     = "terraform-db"
 }
 
-variable "ip_address" {
-  description = "Your ip address"
-  type        = string
-}
+# variable "ip_address" {
+#   description = "Your ip address"
+#   type        = string
+# }
 
 # Optional Parameters
 ## These parameters have reasonable defaults.

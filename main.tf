@@ -82,8 +82,9 @@ resource "aws_security_group_rule" "allow_db_access" {
   to_port           = var.port
   protocol          = "tcp"
   security_group_id = aws_security_group.db_instance.id
+  cidr_blocks       = ["0.0.0.0/0"]
   # Only allow access via your ip
-  cidr_blocks       =  ["${var.ip_address}"]
+  # cidr_blocks       =  ["${var.ip_address}"]
 }
 
 # Create database instance  
